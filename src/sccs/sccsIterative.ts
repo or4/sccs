@@ -12,7 +12,8 @@ type StackItem = {
 const dfsReverse = (graph: (GraphItem)[], start: number): any[] => {
   // console.log('graph', objToString(graph));
   const backVerticesArray = [] as any[];
-  const stack = [{ vertice: start, len: graph[start] && graph[start].vertices.length || 0, index: 0 }] as StackItem[];
+  const stack = new Array(Math.pow(10, 7)) as StackItem[];
+  stack.push( { vertice: start, len: graph[start] && graph[start].vertices.length || 0, index: 0 });
   let stackItem: StackItem | undefined = stack[0];
   let item = start;
 
@@ -43,12 +44,17 @@ const dfsReverse = (graph: (GraphItem)[], start: number): any[] => {
 
     const nextVertice = graphItem.vertices[stackItem.index];
     stack.push({ vertice: nextVertice, len: graph[nextVertice] && graph[nextVertice].vertices.length || 0, index: 0 });
+    if (stack.length % Math.pow(10, 6) === 0) {
+      console.log('stack.length', stack.length);
+    }
     item = nextVertice;
   }
 };
 
 const sccsBackward = (raw: string): number[] => {
+  console.log('sccsBackward start');
   const graph = convertToArray(raw, 'reverse');
+  console.log('sccsBackward converted');
   let vertices: number[] = [];
   // console.log('sccsBackward, graph', objToString(graph));
 
@@ -157,7 +163,9 @@ const sccsToward = (raw: string, vertices: number[]): string => {
 
 export const sccs = (raw: string): string => {
   const vertices = sccsBackward(raw);
-  const output = sccsToward(raw, vertices);
-  console.log('sccs, output', output);
-  return output;
+  console.log(vertices);
+  // const output = sccsToward(raw, vertices);
+  // console.log('sccs, output', output);
+  // return output;
+  return vertices.join(', ');
 };

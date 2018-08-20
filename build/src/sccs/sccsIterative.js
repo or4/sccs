@@ -33,7 +33,9 @@ const dfsReverse = (graph, start) => {
     }
 };
 const sccsBackward = (raw) => {
+    console.log('sccsBackward start');
     const graph = utils_1.convertToArray(raw, 'reverse');
+    console.log('sccsBackward converted');
     let vertices = [];
     // console.log('sccsBackward, graph', objToString(graph));
     let index = 0;
@@ -113,7 +115,9 @@ const sccsToward = (raw, vertices) => {
 };
 exports.sccs = (raw) => {
     const vertices = sccsBackward(raw);
-    const output = sccsToward(raw, vertices);
-    console.log('sccs, output', output);
-    return output;
+    console.log(vertices);
+    // const output = sccsToward(raw, vertices);
+    // console.log('sccs, output', output);
+    // return output;
+    return vertices.join(', ');
 };
