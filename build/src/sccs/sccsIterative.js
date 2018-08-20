@@ -5,30 +5,47 @@ const utils_1 = require("./utils");
 const dfsReverse = (graph, start) => {
     // console.log('graph', objToString(graph));
     const backVerticesArray = [];
-    const stack = [{ vertice: start, len: graph[start] && graph[start].vertices.length || 0, index: 0 }];
-    let stackItem = stack[0];
+    // const stackVertice = new Array(Math.pow(10, 7)) as number[];
+    // const stackLen = new Array(Math.pow(10, 7)) as number[];
+    // const stackIndex = new Array(Math.pow(10, 7)) as number[];
+    const stackVertice = [];
+    const stackLen = [];
+    const stackIndex = [];
+    stackVertice.push(start);
+    stackLen.push(graph[start] && graph[start].vertices.length || 0);
+    stackIndex.push(0);
+    let stackItemVertice = stackVertice[0];
+    let stackItemLen = stackLen[0];
+    let stackItemIndex = stackIndex[0];
     let item = start;
     while (true) {
         const graphItem = graph[item];
         // console.log('graphItem', objToString(graphItem));
-        if (R.isNil(graphItem) || !(stackItem && graphItem.currentVertice === stackItem.vertice) && graphItem.visited) {
+        if (R.isNil(graphItem) || !(stackItemVertice && graphItem.currentVertice === stackItemVertice) && graphItem.visited) {
             while (true) {
-                stackItem = stack.pop();
-                if (R.isNil(stackItem)) {
+                stackItemVertice = stackVertice.pop();
+                stackItemLen = stackLen.pop();
+                stackItemIndex = stackIndex.pop();
+                if (R.isNil(stackItemVertice)) {
                     return backVerticesArray;
                 }
-                backVerticesArray.push(stackItem.vertice);
-                if (stackItem.index < stackItem.len - 1) {
-                    stackItem.index++;
-                    item = stackItem.vertice;
+                backVerticesArray.push(stackItemVertice);
+                if (stackItemIndex < stackItemLen - 1) {
+                    stackItemIndex++;
+                    item = stackItemVertice;
                     break;
                 }
             }
             continue;
         }
         graphItem.visited = true;
-        const nextVertice = graphItem.vertices[stackItem.index];
-        stack.push({ vertice: nextVertice, len: graph[nextVertice] && graph[nextVertice].vertices.length || 0, index: 0 });
+        const nextVertice = graphItem.vertices[stackItemIndex];
+        stackVertice.push(nextVertice);
+        stackLen.push(graph[nextVertice] && graph[nextVertice].vertices.length || 0);
+        stackIndex.push(0);
+        if (stackVertice.length % Math.pow(10, 6) === 0) {
+            console.log('stackVertice.length', stackVertice.length);
+        }
         item = nextVertice;
     }
 };
@@ -115,7 +132,7 @@ const sccsToward = (raw, vertices) => {
 };
 exports.sccs = (raw) => {
     const vertices = sccsBackward(raw);
-    console.log(vertices);
+    console.log('vertices', vertices);
     // const output = sccsToward(raw, vertices);
     // console.log('sccs, output', output);
     // return output;

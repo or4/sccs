@@ -12,28 +12,40 @@ type StackItem = {
 const dfsReverse = (graph: (GraphItem)[], start: number): any[] => {
   // console.log('graph', objToString(graph));
   const backVerticesArray = [] as any[];
-  const stack = new Array(Math.pow(10, 7)) as StackItem[];
-  stack.push( { vertice: start, len: graph[start] && graph[start].vertices.length || 0, index: 0 });
-  let stackItem: StackItem | undefined = stack[0];
+  // const stackVertice = new Array(Math.pow(10, 7)) as number[];
+  // const stackLen = new Array(Math.pow(10, 7)) as number[];
+  // const stackIndex = new Array(Math.pow(10, 7)) as number[];
+  const stackVertice = [] as number[];
+  const stackLen = [] as number[];
+  const stackIndex = [] as number[];
+  stackVertice.push( start);
+  stackLen.push(graph[start] && graph[start].vertices.length || 0);
+  stackIndex.push(0);
+
+  let stackItemVertice: number | undefined = stackVertice[0];
+  let stackItemLen: number | undefined = stackLen[0];
+  let stackItemIndex: number | undefined = stackIndex[0];
   let item = start;
 
   while (true) {
     const graphItem = graph[item];
     // console.log('graphItem', objToString(graphItem));
 
-    if (R.isNil(graphItem) || !(stackItem && graphItem.currentVertice === stackItem.vertice) && graphItem.visited) {
+    if (R.isNil(graphItem) || !(stackItemVertice && graphItem.currentVertice === stackItemVertice) && graphItem.visited) {
       while (true) {
-        stackItem = stack.pop();
+        stackItemVertice = stackVertice.pop();
+        stackItemLen = stackLen.pop();
+        stackItemIndex = stackIndex.pop();
 
-        if (R.isNil(stackItem)) {
+        if (R.isNil(stackItemVertice)) {
           return backVerticesArray;
         }
 
-        backVerticesArray.push(stackItem.vertice);
+        backVerticesArray.push(stackItemVertice);
 
-        if (stackItem.index < stackItem.len - 1) {
-          stackItem.index++;
-          item = stackItem.vertice;
+        if (stackItemIndex < stackItemLen - 1) {
+          stackItemIndex++;
+          item = stackItemVertice;
           break;
         }
       }
@@ -42,10 +54,14 @@ const dfsReverse = (graph: (GraphItem)[], start: number): any[] => {
 
     graphItem.visited = true;
 
-    const nextVertice = graphItem.vertices[stackItem.index];
-    stack.push({ vertice: nextVertice, len: graph[nextVertice] && graph[nextVertice].vertices.length || 0, index: 0 });
-    if (stack.length % Math.pow(10, 6) === 0) {
-      console.log('stack.length', stack.length);
+    const nextVertice = graphItem.vertices[stackItemIndex];
+    stackVertice.push(nextVertice);
+    stackLen.push(graph[nextVertice] && graph[nextVertice].vertices.length || 0);
+    stackIndex.push(0);
+
+
+    if (stackVertice.length % Math.pow(10, 6) === 0) {
+      console.log('stackVertice.length', stackVertice.length);
     }
     item = nextVertice;
   }
@@ -163,7 +179,7 @@ const sccsToward = (raw: string, vertices: number[]): string => {
 
 export const sccs = (raw: string): string => {
   const vertices = sccsBackward(raw);
-  console.log(vertices);
+  console.log('vertices', vertices);
   // const output = sccsToward(raw, vertices);
   // console.log('sccs, output', output);
   // return output;
