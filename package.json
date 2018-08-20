@@ -1,0 +1,44 @@
+{
+  "name": "node-typescript-boilerplate",
+  "author": "Maik Ellerbrock <opensource@frapsoft.com> (https://github.com/ellerbrock)",
+  "homepage": "https://github.com/ellerbrock/node-typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "Node.js TypeScript Boilerplate",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run env:dev && nodemon --exec ts-node -- $2",
+    "prebuild": "rimraf build",
+    "build": "tsc",
+    "lint": "tslint src/*.ts && tslint example/*.ts && tslint test/*.ts",
+    "commit": "git add --all && git status",
+    "upd": "ncu -ua && yarn",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production"
+  },
+  "keywords": [
+    "boilerplate",
+    "skeleton",
+    "starter",
+    "ts",
+    "typescirpt-node",
+    "typescript",
+    "typescript-boilerplate",
+    "typescript-skeleton",
+    "typescript-starter"
+  ],
+  "devDependencies": {
+    "@types/node": "^10.0.3",
+    "@types/ramda": "^0.25.36",
+    "cross-env": "^5.0.0",
+    "nodemon": "^1.11.0",
+    "npm-check-updates": "^2.8.7",
+    "ramda": "^0.25.0",
+    "rimraf": "^2.5.4",
+    "ts-node": "^7.0.0",
+    "tsdoc": "^0.0.4",
+    "tslint": "^5.0.0",
+    "typescript": "^2.0.10",
+    "yarn": "^1.0.1"
+  }
+}
