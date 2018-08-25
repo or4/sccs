@@ -30,9 +30,7 @@ export const convertToArray = (data: string, order: GraphOrder = 'right') => {
         R.when(
           () => order !== 'right',
           R.pipe<number[], number[]>(
-            // R.tap(console.log),
             R.reverse,
-            // R.tap(console.log),
           )
         )
       )

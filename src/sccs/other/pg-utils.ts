@@ -43,3 +43,15 @@ export const select = async (table: Tables) => {
   return rows && (rows as any).rows || [];
 }
 
+
+// const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/todo';
+// const connectionString = `Provider=PostgreSQL OLE DB Provider;Data Source=postgres://localhost:5432;location=edu;User ID=postgres;password=1;timeout=1000;`
+
+
+// const f = async () => {
+//   const res = await select('stack')
+//   console.log('res', res);
+// }
+
+// f();
+

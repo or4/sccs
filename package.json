@@ -7,7 +7,7 @@
   "main": "build/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run env:dev && nodemon --exec ts-node -- $2",
+    "start": "yarn run env:dev && nodemon --exec ts-node -- example",
     "prebuild": "rimraf build",
     "build": "tsc",
     "lint": "tslint src/*.ts && tslint example/*.ts && tslint test/*.ts",
@@ -30,9 +30,11 @@
   "devDependencies": {
     "@types/node": "^10.0.3",
     "@types/ramda": "^0.25.36",
+    "@types/pg": "^7.4.10",
     "cross-env": "^5.0.0",
     "nodemon": "^1.11.0",
     "npm-check-updates": "^2.8.7",
+    "pg": "7.4.3",
     "ramda": "^0.25.0",
     "rimraf": "^2.5.4",
     "ts-node": "^7.0.0",
@@ -40,8 +42,5 @@
     "tslint": "^5.0.0",
     "typescript": "^2.0.10",
     "yarn": "^1.0.1"
-  },
-  "dependencies": {
-    "pg": "6.1.0"
   }
 }
