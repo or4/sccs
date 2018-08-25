@@ -1,9 +1,9 @@
 import * as R from 'ramda';
-import { GraphItem, convertToArray } from './utils';
+import { convertToArray, GraphItem } from './utils';
 
 const backVerticesArray: number[] = [];
 
-const deepFirstSearch = (graph: (GraphItem)[], start: number): void => {
+const deepFirstSearch = (graph: GraphItem[], start: number): void => {
   const graphItem = graph[start];
   if (R.isNil(graphItem) || graphItem.visited) {
     return;
@@ -37,6 +37,8 @@ export const backward = (raw: string): number[] => {
     }
     index++;
   }
+
+  console.log('backVerticesArray', backVerticesArray);
 
   return backVerticesArray;
 };
