@@ -2,17 +2,17 @@ import * as R from 'ramda';
 import { SccType } from './types';
 import { GraphItem, convertToArray } from './utils';
 
-const deepFirstSearch = (graph: (GraphItem)[], start: number): SccType => {
-  const graphItem = graph[start];
-  if (R.isNil(graphItem) || graphItem.visited) {
+const deepFirstSearch = (graph: GraphItem[], vertexNumber: number): SccType => {
+  const vertex = graph[vertexNumber];
+
+  if (R.isNil(vertex) || vertex.visited) {
     return { length: 0, path: [] };
   }
+  vertex.visited = true;
 
-  graphItem.visited = true;
-
-  const results = graphItem.vertices.map((item: number) => {
-    const resDfs = deepFirstSearch(graph, item);
-    return { length: resDfs.length + 1, path: [item, ...resDfs.path] };
+  const results = vertex.vertices.map((vertexNumber: number) => {
+    const scc = deepFirstSearch(graph, vertexNumber);
+    return { length: scc.length + 1, path: [vertexNumber, ...scc.path] };
   });
 
   return R.reduce((acc: SccType, current: SccType) => {
@@ -26,24 +26,23 @@ const deepFirstSearch = (graph: (GraphItem)[], start: number): SccType => {
 
 
 
-export const forward = (raw: string, vertices: number[]): number[] => {
+export const forward = (raw: string, backwardVertices: number[]): number[] => {
   const graph = convertToArray(raw);
-  const backVerticesSorted = vertices;
   const output = [] as SccType[];
 
-  let index = backVerticesSorted.length - 1;
-  while (index >= 0) {
-    const graphIndex = backVerticesSorted[index];
+  let backwardVerticesIndex = backwardVertices.length - 1;
+  while (backwardVerticesIndex >= 0) {
+    const vertexNumber = backwardVertices[backwardVerticesIndex];
 
-    if (!R.isNil(graph[graphIndex]) && !graph[graphIndex].visited) {
-      const graphItem = graph[graphIndex];
+    if (!R.isNil(graph[vertexNumber]) && !graph[vertexNumber].visited) {
+      const graphItem = graph[vertexNumber];
       const resultDfs = deepFirstSearch(graph, graphItem.currentVertice);
       output.push(resultDfs);
     }
-    if (R.isNil(graph[graphIndex])) {
-      output.push({ length: 1, path: [graphIndex] });
+    if (R.isNil(graph[vertexNumber])) {
+      output.push({ length: 1, path: [vertexNumber] });
     }
-    index--;
+    backwardVerticesIndex--;
   }
 
   return R.pipe<SccType[], number[], number[]>(

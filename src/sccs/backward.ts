@@ -1,44 +1,41 @@
 import * as R from 'ramda';
 import { convertToArray, GraphItem } from './utils';
 
-const backVerticesArray: number[] = [];
+const outputArray: number[] = [];
 
-const deepFirstSearch = (graph: GraphItem[], start: number): void => {
-  const graphItem = graph[start];
-  if (R.isNil(graphItem) || graphItem.visited) {
+const deepFirstSearch = (graph: GraphItem[], vertexNumber: number): void => {
+  const vertex = graph[vertexNumber];
+
+  if (R.isNil(vertex) || vertex.visited) {
     return;
   }
-  graphItem.visited = true;
+  vertex.visited = true;
 
-  graphItem.vertices.map((item: number) => {
-    if (!R.isNil(graph[item]) && !graph[item].visited) {
-      deepFirstSearch(graph, item);
-      backVerticesArray.push(item);
+  vertex.vertices.forEach((item: number) => {
+    if (R.isNil(graph[item]) || graph[item].visited) {
+      return;
     }
-    if (R.isNil(graph[item])) {
-      if (graph[item] !== null) {
-        backVerticesArray.push(item);
-      } else {
-        graph[item] = null as any;
-      }
-    }
-    return 0;
+
+    deepFirstSearch(graph, item);
+    outputArray.push(item);
   });
 };
 
 export const backward = (raw: string): number[] => {
+  outputArray.length = 0;
   const graph = convertToArray(raw, 'reverse');
 
-  let index = 0;
-  while (graph[index] || index < graph.length) {
-    if (!R.isNil(graph[index]) && !graph[index].visited) {
-      deepFirstSearch(graph, index);
-      backVerticesArray.push(index);
+  // not visited vertex number
+  let vertexNumber = 0;
+  while (vertexNumber < graph.length) {
+    if (!R.isNil(graph[vertexNumber]) && !graph[vertexNumber].visited) {
+      deepFirstSearch(graph, vertexNumber);
+      outputArray.push(vertexNumber);
     }
-    index++;
+
+    vertexNumber++;
   }
 
-  console.log('backVerticesArray', backVerticesArray);
-
-  return backVerticesArray;
+  console.log('outputArray', outputArray);
+  return outputArray;
 };
