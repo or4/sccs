@@ -1,5 +1,7 @@
 import * as R from 'ramda';
 
+// need hard to refactor
+
 export class GraphItem {
   visited: boolean;
   currentVertice: number;

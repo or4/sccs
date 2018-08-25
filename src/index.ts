@@ -1,4 +1,4 @@
-import { sccs } from './sccs/sccsRecursive';
+import { sccs } from './sccs';
 import { data } from './sccs/data/dataTest1';
 
 export function start() {
