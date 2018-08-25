@@ -1,25 +1,8 @@
-import * as R from 'ramda';
+/**
+ * Some ramda helpers, usually for debub
+ */
 
-// this code is very not efficiency, only debug
-// cause objToString is recursive function
-// and after each call function pipe is created
-// doesnt work with cyclic links aka child -> parent -> child
-// export function objToString(obj: object): string {
-//   return R.pipe(
-//     R.toPairs,
-//     R.map(
-//       R.ifElse(
-//         item => typeof item[1] === 'object',
-//         (item: any[]) => `${item[0]}:  ${objToString(item[1])}`,
-//         // (item: any[]) => `${item[0]}:  ${item[1]}`,
-//         R.join(': ')
-//       )
-//     ),
-//     R.join(', '),
-//     R.concat('{ '),
-//     R.partialRight(R.concat, [' }'])
-//   )(obj) as any;
-// }
+import * as R from 'ramda';
 
 export function objToString(value: any): any {
   if (typeof value === 'number' || typeof value === 'string' || typeof value === 'undefined') {
@@ -33,10 +16,6 @@ export function objToString(value: any): any {
       R.concat('['),
       R.partialRight(R.concat as any, [']'])
     )(value);
-
-    // return '[' + value.map(
-    //   item => objToString(item)
-    // ).join(', ') + ']';
   }
 
   return R.pipe(
@@ -53,6 +32,5 @@ export function objToString(value: any): any {
     R.partialRight(R.concat, [Array.isArray(value) ? ' ]' : ' }'])
   )(value) as any;
 }
-
 
 export const isNotNil = R.complement(R.isNil);
