@@ -5,9 +5,10 @@ import { forward } from './forward';
 
 export const sccs = (raw: string): string => {
   const vertices = backward(raw);
-  console.log('backward output:', vertices);
+  // console.log('backward output:', vertices);
 
   // return '';
   const sccLengths: number[] = forward(raw, vertices);
+  // console.log('sccLengths:', sccLengths);
   return sccLengths.join(', ');
 };

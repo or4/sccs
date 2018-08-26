@@ -1,6 +1,10 @@
 import { sccs } from './sccs';
-import { data } from './sccs/data/dataTest0';
+import { data } from './sccs/data/dataTest25';
 
 export function start() {
-  console.log(sccs(data));
+  try {
+    console.log(sccs(data));
+  } catch (error) {
+    console.log('error', error);
+  }
 }

@@ -36,6 +36,6 @@ export const backward = (raw: string): number[] => {
     vertexNumber++;
   }
 
-  console.log('outputArray', outputArray);
+  // console.log('outputArray', outputArray);
   return outputArray;
 };
