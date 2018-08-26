@@ -1,0 +1,1012 @@
+process vertex { vertex: 393, vertices: [277], visited: false }
+vertex 393 visited=true
+process vertex { vertex: 277, vertices: [166], visited: false }
+vertex 277 visited=true
+process vertex { vertex: 166, vertices: [46, 121], visited: false }
+vertex 166 visited=true
+process vertex { vertex: 46, vertices: [308], visited: false }
+vertex 46 visited=true
+process vertex { vertex: 308, vertices: [121], visited: false }
+vertex 308 visited=true
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+
+
+
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 308 visited=false
+vertex 46 visited=false
+
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 166 visited=false
+vertex 277 visited=false
+vertex 393 visited=false
+vertex 171 visited=false
+vertex 245 visited=false
+vertex 81 visited=false
+vertex 200 visited=false
+vertex 86 visited=false
+vertex 213 visited=false
+vertex 353 visited=false
+vertex 365 visited=false
+vertex 68 visited=false
+vertex 194 visited=false
+vertex 48 visited=false
+vertex 20 visited=false
+vertex 343 visited=false
+vertex 318 visited=false
+vertex 257 visited=false
+vertex 294 visited=false
+vertex 259 visited=false
+vertex 180 visited=false
+vertex 149 visited=false
+vertex 376 visited=false
+vertex 238 visited=false
+vertex 146 visited=false
+vertex 45 visited=false
+vertex 369 visited=false
+vertex 269 visited=false
+vertex 280 visited=false
+process vertex { vertex: 369, vertices: [45], visited: false }
+vertex 369 visited=true
+process vertex { vertex: 45, vertices: [146], visited: false }
+vertex 45 visited=true
+process vertex { vertex: 146, vertices: [238], visited: false }
+vertex 146 visited=true
+process vertex { vertex: 238, vertices: [376], visited: false }
+vertex 238 visited=true
+process vertex { vertex: 376, vertices: [149], visited: false }
+vertex 376 visited=true
+process vertex { vertex: 149, vertices: [180], visited: false }
+vertex 149 visited=true
+process vertex { vertex: 180, vertices: [108, 259], visited: false }
+vertex 180 visited=true
+process vertex { vertex: 108, vertices: [259], visited: false }
+vertex 108 visited=true
+process vertex { vertex: 259, vertices: [294], visited: false }
+vertex 259 visited=true
+process vertex { vertex: 294, vertices: [257], visited: false }
+vertex 294 visited=true
+process vertex { vertex: 257, vertices: [318], visited: false }
+vertex 257 visited=true
+process vertex { vertex: 318, vertices: [68, 343], visited: false }
+vertex 318 visited=true
+process vertex { vertex: 68, vertices: [365], visited: false }
+vertex 68 visited=true
+process vertex { vertex: 365, vertices: [353], visited: false }
+vertex 365 visited=true
+process vertex { vertex: 353, vertices: [213], visited: false }
+vertex 353 visited=true
+process vertex { vertex: 213, vertices: [86], visited: false }
+vertex 213 visited=true
+process vertex { vertex: 86, vertices: [200], visited: false }
+vertex 86 visited=true
+process vertex { vertex: 200, vertices: [81], visited: false }
+vertex 200 visited=true
+process vertex { vertex: 81, vertices: [245], visited: false }
+vertex 81 visited=true
+process vertex { vertex: 245, vertices: [171], visited: false }
+vertex 245 visited=true
+process vertex { vertex: 171, vertices: [393], visited: false }
+vertex 171 visited=true
+process vertex { vertex: 393, vertices: [277], visited: false }
+vertex 393 visited=true
+process vertex { vertex: 277, vertices: [166], visited: false }
+vertex 277 visited=true
+process vertex { vertex: 166, vertices: [46, 121], visited: false }
+vertex 166 visited=true
+process vertex { vertex: 46, vertices: [308], visited: false }
+vertex 46 visited=true
+process vertex { vertex: 308, vertices: [121], visited: false }
+vertex 308 visited=true
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 308 visited=false
+vertex 46 visited=false
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 166 visited=false
+vertex 277 visited=false
+vertex 393 visited=false
+vertex 171 visited=false
+vertex 245 visited=false
+vertex 81 visited=false
+vertex 200 visited=false
+vertex 86 visited=false
+vertex 213 visited=false
+vertex 353 visited=false
+vertex 365 visited=false
+vertex 68 visited=false
+process vertex { vertex: 343, vertices: [20], visited: false }
+vertex 343 visited=true
+process vertex { vertex: 20, vertices: [48], visited: false }
+vertex 20 visited=true
+process vertex { vertex: 48, vertices: [194], visited: false }
+vertex 48 visited=true
+process vertex { vertex: 194, vertices: [68], visited: false }
+vertex 194 visited=true
+process vertex { vertex: 68, vertices: [365], visited: false }
+vertex 68 visited=true
+process vertex { vertex: 365, vertices: [353], visited: false }
+vertex 365 visited=true
+process vertex { vertex: 353, vertices: [213], visited: false }
+vertex 353 visited=true
+process vertex { vertex: 213, vertices: [86], visited: false }
+vertex 213 visited=true
+process vertex { vertex: 86, vertices: [200], visited: false }
+vertex 86 visited=true
+process vertex { vertex: 200, vertices: [81], visited: false }
+vertex 200 visited=true
+process vertex { vertex: 81, vertices: [245], visited: false }
+vertex 81 visited=true
+process vertex { vertex: 245, vertices: [171], visited: false }
+vertex 245 visited=true
+process vertex { vertex: 171, vertices: [393], visited: false }
+vertex 171 visited=true
+process vertex { vertex: 393, vertices: [277], visited: false }
+vertex 393 visited=true
+process vertex { vertex: 277, vertices: [166], visited: false }
+vertex 277 visited=true
+process vertex { vertex: 166, vertices: [46, 121], visited: false }
+vertex 166 visited=true
+process vertex { vertex: 46, vertices: [308], visited: false }
+vertex 46 visited=true
+process vertex { vertex: 308, vertices: [121], visited: false }
+vertex 308 visited=true
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 308 visited=false
+vertex 46 visited=false
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 166 visited=false
+vertex 277 visited=false
+vertex 393 visited=false
+vertex 171 visited=false
+vertex 245 visited=false
+vertex 81 visited=false
+vertex 200 visited=false
+vertex 86 visited=false
+vertex 213 visited=false
+vertex 353 visited=false
+vertex 365 visited=false
+vertex 68 visited=false
+vertex 194 visited=false
+vertex 48 visited=false
+vertex 20 visited=false
+vertex 343 visited=false
+vertex 318 visited=false
+vertex 257 visited=false
+vertex 294 visited=false
+vertex 259 visited=false
+vertex 108 visited=false
+process vertex { vertex: 259, vertices: [294], visited: false }
+vertex 259 visited=true
+process vertex { vertex: 294, vertices: [257], visited: false }
+vertex 294 visited=true
+process vertex { vertex: 257, vertices: [318], visited: false }
+vertex 257 visited=true
+process vertex { vertex: 318, vertices: [68, 343], visited: false }
+vertex 318 visited=true
+process vertex { vertex: 68, vertices: [365], visited: false }
+vertex 68 visited=true
+process vertex { vertex: 365, vertices: [353], visited: false }
+vertex 365 visited=true
+process vertex { vertex: 353, vertices: [213], visited: false }
+vertex 353 visited=true
+process vertex { vertex: 213, vertices: [86], visited: false }
+vertex 213 visited=true
+process vertex { vertex: 86, vertices: [200], visited: false }
+vertex 86 visited=true
+process vertex { vertex: 200, vertices: [81], visited: false }
+vertex 200 visited=true
+process vertex { vertex: 81, vertices: [245], visited: false }
+vertex 81 visited=true
+process vertex { vertex: 245, vertices: [171], visited: false }
+vertex 245 visited=true
+process vertex { vertex: 171, vertices: [393], visited: false }
+vertex 171 visited=true
+process vertex { vertex: 393, vertices: [277], visited: false }
+vertex 393 visited=true
+process vertex { vertex: 277, vertices: [166], visited: false }
+vertex 277 visited=true
+process vertex { vertex: 166, vertices: [46, 121], visited: false }
+vertex 166 visited=true
+process vertex { vertex: 46, vertices: [308], visited: false }
+vertex 46 visited=true
+process vertex { vertex: 308, vertices: [121], visited: false }
+vertex 308 visited=true
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false
+vertex 24 visited=false
+vertex 260 visited=false
+vertex 41 visited=false
+vertex 121 visited=false
+vertex 308 visited=false
+vertex 46 visited=false
+process vertex { vertex: 121, vertices: [41], visited: false }
+vertex 121 visited=true
+process vertex { vertex: 41, vertices: [260], visited: false }
+vertex 41 visited=true
+process vertex { vertex: 260, vertices: [24], visited: false }
+vertex 260 visited=true
+process vertex { vertex: 24, vertices: [84], visited: false }
+vertex 24 visited=true
+process vertex { vertex: 84, vertices: [339], visited: false }
+vertex 84 visited=true
+process vertex { vertex: 339, vertices: [114], visited: false }
+vertex 339 visited=true
+process vertex { vertex: 114, vertices: [201], visited: false }
+vertex 114 visited=true
+process vertex { vertex: 201, vertices: [234], visited: false }
+vertex 201 visited=true
+process vertex { vertex: 234, vertices: [237], visited: false }
+vertex 234 visited=true
+process vertex { vertex: 237, vertices: [394], visited: false }
+vertex 237 visited=true
+process vertex { vertex: 394, vertices: [132], visited: false }
+vertex 394 visited=true
+process vertex { vertex: 132, vertices: [23, 398], visited: false }
+vertex 132 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+process vertex { vertex: 398, vertices: [23], visited: false }
+vertex 398 visited=true
+process vertex { vertex: 23, vertices: [186], visited: false }
+vertex 23 visited=true
+process vertex { vertex: 186, vertices: [342], visited: false }
+vertex 186 visited=true
+process vertex { vertex: 342, vertices: [306], visited: false }
+vertex 342 visited=true
+process vertex { vertex: 306, vertices: [150], visited: false }
+vertex 306 visited=true
+process vertex { vertex: 150, vertices: [167], visited: false }
+vertex 150 visited=true
+process vertex { vertex: 167, vertices: [246], visited: false }
+vertex 167 visited=true
+process vertex { vertex: 246, vertices: [94], visited: false }
+vertex 246 visited=true
+process vertex { vertex: 94, vertices: [67], visited: false }
+vertex 94 visited=true
+process vertex { vertex: 67, vertices: [272], visited: false }
+vertex 67 visited=true
+process vertex { vertex: 272, vertices: [1], visited: false }
+vertex 272 visited=true
+exit because vertex is visited or is nil { vertex: 1, vertices: [214], visited: true }
+vertex 272 visited=false
+vertex 67 visited=false
+vertex 94 visited=false
+vertex 246 visited=false
+vertex 167 visited=false
+vertex 150 visited=false
+vertex 306 visited=false
+vertex 342 visited=false
+vertex 186 visited=false
+vertex 23 visited=false
+vertex 398 visited=false
+vertex 132 visited=false
+vertex 394 visited=false
+vertex 237 visited=false
+vertex 234 visited=false
+vertex 201 visited=false
+vertex 114 visited=false
+vertex 339 visited=false
+vertex 84 visited=false

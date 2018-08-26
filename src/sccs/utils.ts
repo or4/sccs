@@ -4,16 +4,16 @@ import * as R from 'ramda';
 
 export class GraphItem {
   visited: boolean;
-  currentVertice: number;
+  vertex: number;
   vertices: number[]; // to vertices
 
-  constructor(currentVertice: number) {
-    this.currentVertice = currentVertice;
+  constructor(vertex: number) {
+    this.vertex = vertex;
     this.vertices = [];
   }
 
   public push(vertice: number) {
-    if (vertice === this.currentVertice || this.vertices.indexOf(vertice) !== -1) {
+    if (vertice === this.vertex || this.vertices.indexOf(vertice) !== -1) {
       return;
     }
     this.vertices.push(vertice);
@@ -41,14 +41,14 @@ export const convertToArray = (data: string, order: GraphOrder = 'right') => {
 
   const output = [] as GraphItem[];
   splitted.forEach((item: number[]): void => {
-    const currentVertice = item[0];
+    const vertex = item[0];
     const toVertice = item[1];
 
-    if (R.isNil(output[currentVertice])) {
-      output[currentVertice] = new GraphItem(currentVertice);
+    if (R.isNil(output[vertex])) {
+      output[vertex] = new GraphItem(vertex);
     }
 
-    output[currentVertice].push(toVertice);
+    output[vertex].push(toVertice);
   });
 
   return output;
@@ -59,7 +59,7 @@ export const checkConsistency = (graph: GraphItem[]) => {
   let i = 2;
   for (; i < graph.length; i++) {
     try {
-      if ((graph[i].currentVertice - graph[i - 1].currentVertice) !== 1) {
+      if ((graph[i].vertex - graph[i - 1].vertex) !== 1) {
         console.log('checkConsistency', i);
         break;
       }

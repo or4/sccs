@@ -1,53 +1,53 @@
-import * as R from 'ramda';
-import { GraphItem, convertToArray } from './utils';
+// import * as R from 'ramda';
+// import { GraphItem, convertToArray } from './utils';
 
-function getLengthRecursive(graph: GraphItem[], from: number, vertice: number): number {
-  // console.log(`getLengthRunner from=${from}, vertice=${vertice}`);
-  graph[from].visited = true;
+// function getLengthRecursive(graph: GraphItem[], from: number, vertice: number): number {
+//   // console.log(`getLengthRunner from=${from}, vertice=${vertice}`);
+//   graph[from].visited = true;
 
-  if (from === vertice) {
-    return 1;
-  }
+//   if (from === vertice) {
+//     return 1;
+//   }
 
-  const resArray = graph[from].vertices.map(
-    item => getLengthRecursive(graph, item, vertice) + 1
-  );
+//   const resArray = graph[from].vertices.map(
+//     item => getLengthRecursive(graph, item, vertice) + 1
+//   );
 
-  return R.apply(Math.max, resArray);
-}
+//   return R.apply(Math.max, resArray);
+// }
 
-export const sccs = (raw: string): string => {
-  const graph = convertToArray(raw);
+// export const sccs = (raw: string): string => {
+//   const graph = convertToArray(raw);
 
-  // console.log(graph);
-  let output = [] as number[];
+//   // console.log(graph);
+//   let output = [] as number[];
 
-  let index = 1;
-  // while (graph[index]) {
-  //   if (graph[index].visited) {
-  //     index++;
-  //     continue;
-  //   }
+//   let index = 1;
+//   // while (graph[index]) {
+//   //   if (graph[index].visited) {
+//   //     index++;
+//   //     continue;
+//   //   }
 
-  const itemFrom = graph[index];
+//   const itemFrom = graph[index];
 
-  output.push(getLengthRecursive(graph, index, itemFrom.currentVertice));
-  //   index++;
-  // }
+//   output.push(getLengthRecursive(graph, index, itemFrom.vertex));
+//   //   index++;
+//   // }
 
-  output = R.sort((a, b) => b - a, output);
+//   output = R.sort((a, b) => b - a, output);
 
-  const addNullIfLessThan5 = R.when<number[], number[]>(
-    R.pipe(R.length, R.partialRight(R.lt as any, [5])),
-    R.append(0)
-  );
+//   const addNullIfLessThan5 = R.when<number[], number[]>(
+//     R.pipe(R.length, R.partialRight(R.lt as any, [5])),
+//     R.append(0)
+//   );
 
-  R.times(() => {
-    output = addNullIfLessThan5(output);
-  }, 5);
+//   R.times(() => {
+//     output = addNullIfLessThan5(output);
+//   }, 5);
 
-  return output.join(', ');
-};
+//   return output.join(', ');
+// };
 
 
 

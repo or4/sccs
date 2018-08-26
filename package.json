@@ -58,5 +58,8 @@
     "typescript": "^2.9.2-rc",
     "typescript-eslint-parser": "^15.0.0",
     "yarn": "^1.0.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }

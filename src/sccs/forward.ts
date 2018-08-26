@@ -32,6 +32,8 @@ const reset = (graph: any) => {
 };
 
 export const forward = (raw: string, backwardVertices: number[]): number[] => {
+  console.log('backwardVertices', objToString(backwardVertices));
+
   const graph = convertToArray(raw);
   const output: SccType[] = [];
   let usedPath: number[] = [];
@@ -42,18 +44,21 @@ export const forward = (raw: string, backwardVertices: number[]): number[] => {
     // reset(graph);
     // console.log('vertexNumber', vertexNumber);
 
-    if (R.isNil(graph[vertexNumber])) { output.push({ length: 1, path: [vertexNumber] }) }
-    if (R.isNil(graph[vertexNumber]) || graph[vertexNumber].visited || R.contains(vertexNumber, usedPath)) {
+    // if (R.isNil(graph[vertexNumber])) { output.push({ length: 1, path: [vertexNumber] }) }
+    if (R.isNil(graph[vertexNumber]) || R.contains(vertexNumber, usedPath)) {
       // console.log('continue by visited, vertexNumber', vertexNumber);
       continue;
     }
+    console.log('.');
+    console.log('.');
+
 
     // console.log('dfs by', vertexNumber);
     const res = deepFirstSearch(graph, graph[vertexNumber], vertexNumber);
     usedPath = R.concat(usedPath, res.path);
-    // console.log('dfs res', objToString(res));
+    console.log('dfs res', objToString(res));
     output.push(res);
-    // console.log('dfs done by', vertexNumber, 'output', objToString(res));
+  // console.log('dfs done by', vertexNumber, 'output', objToString(res));
   }
 
   return R.pipe<SccType[], number[], number[]>(
