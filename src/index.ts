@@ -1,5 +1,5 @@
 import { sccs } from './sccs';
-import { data } from './sccs/data/dataTest25';
+import { data } from './sccs/data/dataTest0';
 
 export function start() {
   try {

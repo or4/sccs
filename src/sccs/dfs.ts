@@ -39,39 +39,39 @@ export const testDfs = (raw: string): number[] => {
   let usedPath: number[] = [];
   let vertexNumber = 1;
 
-  console.log('graph', objToString(graph));
+  // console.log('graph', objToString(graph));
 
-  if (true) { return [1, 2, 3] }
+  // if (true) { return [1, 2, 3] }
 
-  // // while (vertexNumber < graph.length) {
-  // log('vertexNumber', vertexNumber);
+  // while (vertexNumber < graph.length) {
+  log('vertexNumber', vertexNumber);
 
-  // // if (R.isNil(graph[vertexNumber])) { output.push({ length: 1, path: [vertexNumber] }) }
-  // // if (R.isNil(graph[vertexNumber]) || R.contains(vertexNumber, usedPath)) {
-  // //   // log('continue by visited, vertexNumber', vertexNumber);
-  // //   // continue;
-  // // }
+  // if (R.isNil(graph[vertexNumber])) { output.push({ length: 1, path: [vertexNumber] }) }
+  // if (R.isNil(graph[vertexNumber]) || R.contains(vertexNumber, usedPath)) {
+  //   // log('continue by visited, vertexNumber', vertexNumber);
+  //   // continue;
+  // }
 
 
-  // log('deepFirstSearch by vertex', vertexNumber);
-  // const results = deepFirstSearch(graph, graph[vertexNumber], vertexNumber);
+  log('deepFirstSearch by vertex', vertexNumber);
+  const results = deepFirstSearch(graph, graph[vertexNumber], vertexNumber);
 
-  // usedPath = R.concat(usedPath, results.path);
-  // log('deepFirstSearch results', objToString(results));
-  // output.push(results);
-  // log('deepFirstSearch done by vertex', vertexNumber, 'output', objToString(results));
+  usedPath = R.concat(usedPath, results.path);
+  log('deepFirstSearch results', objToString(results));
+  output.push(results);
+  log('deepFirstSearch done by vertex', vertexNumber, 'output', objToString(results));
 
-  // vertexNumber++;
+  vertexNumber++;
 
-  // log('.');
-  // log('.');
-  // log('.');
-  // log('.');
-  // // }
+  log('.');
+  log('.');
+  log('.');
+  log('.');
+  // }
 
-  // return R.pipe<SccType[], number[], number[]>(
-  //   R.map(item => item.length),
-  //   R.sort((a, b) => b - a),
-  //   // R.uniq
-  // )(output);
+  return R.pipe<SccType[], number[], number[]>(
+    R.map(item => item.length),
+    R.sort((a, b) => b - a),
+    // R.uniq
+  )(output);
 };
