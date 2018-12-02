@@ -50,7 +50,7 @@ export const select = async (table: Tables) => {
 
 // const f = async () => {
 //   const res = await select('stack')
-//   console.log('res', res);
+//   // console.log('res', res);
 // }
 
 // f();

@@ -32,7 +32,7 @@ const reset = (graph: any) => {
 };
 
 export const forward = (raw: string, backwardVertices: number[]): number[] => {
-  console.log('backwardVertices', objToString(backwardVertices));
+  // console.log('backwardVertices', objToString(backwardVertices));
 
   const graph = convertToArray(raw);
   const output: SccType[] = [];
@@ -49,14 +49,14 @@ export const forward = (raw: string, backwardVertices: number[]): number[] => {
       // console.log('continue by visited, vertexNumber', vertexNumber);
       continue;
     }
-    console.log('.');
-    console.log('.');
+    // console.log('.');
+    // console.log('.');
 
 
     // console.log('dfs by', vertexNumber);
     const res = deepFirstSearch(graph, graph[vertexNumber], vertexNumber);
     usedPath = R.concat(usedPath, res.path);
-    console.log('dfs res', objToString(res));
+    // console.log('dfs res', objToString(res));
     output.push(res);
   // console.log('dfs done by', vertexNumber, 'output', objToString(res));
   }

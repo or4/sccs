@@ -61,16 +61,16 @@
 
 
 //     if (stackVertice.length % Math.pow(10, 6) === 0) {
-//       console.log('stackVertice.length', stackVertice.length);
+//       // console.log('stackVertice.length', stackVertice.length);
 //     }
 //     item = nextVertice;
 //   }
 // };
 
 // const sccsBackward = (raw: string): number[] => {
-//   console.log('sccsBackward start');
+//   // console.log('sccsBackward start');
 //   const graph = convertToArray(raw, 'reverse');
-//   console.log('sccsBackward converted');
+//   // console.log('sccsBackward converted');
 //   let vertices: number[] = [];
 //   // console.log('sccsBackward, graph', objToString(graph));
 
@@ -179,7 +179,7 @@
 
 // export const sccs = (raw: string): string => {
 //   const vertices = sccsBackward(raw);
-//   console.log('vertices', vertices);
+//   // console.log('vertices', vertices);
 //   // const output = sccsToward(raw, vertices);
 //   // console.log('sccs, output', output);
 //   // return output;

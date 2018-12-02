@@ -60,13 +60,13 @@ export const checkConsistency = (graph: GraphItem[]) => {
   for (; i < graph.length; i++) {
     try {
       if ((graph[i].vertex - graph[i - 1].vertex) !== 1) {
-        console.log('checkConsistency', i);
+        // console.log('checkConsistency', i);
         break;
       }
     } catch (error) {
-      console.log('checkConsistency, i', i, error);
+      // console.log('checkConsistency, i', i, error);
       throw new Error(error);
     }
   }
-  console.log('checkConsistency done', i);
+  // console.log('checkConsistency done', i);
 };

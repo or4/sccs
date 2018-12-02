@@ -6,11 +6,14 @@
     "outDir": "build",
     "types": [
       "node"
-    ]
+		]
   },
   "include": [
     "src/*.ts",
     "example/*.ts",
     "test/*.ts"
-  ]
+  ],
+	"node": {
+		"fs": "empty"
+	}
 }

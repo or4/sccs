@@ -108,7 +108,7 @@ function getLengthIterative(graph: GraphItem[], vertice: number): number {
 
     stack.push({ vertice: workVertice, len: graph[workVertice].vertices.length, index: 0 });
     if (stack.length % 1000000 === 0) {
-      console.log(stack.length);
+      // console.log(stack.length);
     }
     index = workVertice;
   }

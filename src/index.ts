@@ -1,10 +1,17 @@
 import { sccs } from './sccs';
-import { data } from './sccs/data/dataTest0';
+import { data } from './sccs/data/dataTest1';
+import * as fs from 'fs';
+import { resetLog, log } from './utils';
 
 export function start() {
   try {
-    console.log(sccs(data));
+    resetLog();
+    const result = sccs(data);
+    console.log('result', result);
+    log(result);
+    log(12112);
+
   } catch (error) {
-    console.log('error', error);
+    // console.log('error', error);
   }
 }

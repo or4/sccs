@@ -49,7 +49,7 @@ export const backward = (raw: string): number[] => {
   while (vertexNumber < graph.length) {
     if (!R.isNil(graph[vertexNumber]) && !R.contains(vertexNumber, usedPath)) {
       const res = deepFirstSearch(graph, vertexNumber);
-      console.log('start dfs, vertexNumber', vertexNumber, ' res', res, 'outputArray', objToString(outputArray));
+      // console.log('start dfs, vertexNumber', vertexNumber, ' res', res, 'outputArray', objToString(outputArray));
 
       usedPath = R.concat(usedPath, res.path);
       // if (!R.contains(vertexNumber, outputArray)) {
