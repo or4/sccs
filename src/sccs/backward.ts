@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import { convertToArray, GraphItem } from './utils';
 import { SccType } from './types';
-import { objToString } from '../helpers';
+import { objToString } from '../utils';
 
 const outputArray: number[] = [];
 
@@ -12,13 +12,10 @@ const deepFirstSearch = (graph: GraphItem[], vertexNumber: number): SccType => {
 
   const results = vertex.vertices.map((item: number) => {
 
-
-
     vertex.visited = true;
 
     const result = deepFirstSearch(graph, item);
     vertex.visited = false;
-
 
     // if (!R.contains(item, outputArray)) {
     outputArray.push(item);

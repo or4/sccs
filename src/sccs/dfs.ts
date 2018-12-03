@@ -1,8 +1,7 @@
 import * as R from 'ramda';
 import { SccType } from './types';
 import { GraphItem, convertToArray } from './utils';
-import { objToString } from '../helpers';
-import { log } from '../utils';
+import { objToString, log } from '../utils';
 
 export const deepFirstSearch = (graph: GraphItem[], vertex: GraphItem, vertexNumber: number): SccType => {
   if (R.isNil(vertex) || vertex.visited) {
@@ -35,6 +34,7 @@ export const deepFirstSearch = (graph: GraphItem[], vertex: GraphItem, vertexNum
 export const testDfs = (raw: string): number[] => {
 
   const graph = convertToArray(raw);
+  log(objToString(graph));
   const output: SccType[] = [];
   let usedPath: number[] = [];
   let vertexNumber = 1;

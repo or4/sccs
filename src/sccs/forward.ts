@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import { SccType } from './types';
 import { GraphItem, convertToArray } from './utils';
-import { objToString } from '../helpers';
+import { objToString } from '../utils';
 
 const deepFirstSearch = (graph: GraphItem[], vertex: GraphItem, vertexNumber: number): SccType => {
   // console.log('start vertex', objToString(vertex));

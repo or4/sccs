@@ -51,7 +51,10 @@ export const convertToArray = (data: string, order: GraphOrder = 'right') => {
     output[vertex].push(toVertice);
   });
 
-  return output;
+
+  const res =  output.map(i => (i ? i : null));
+  console.log('output', res);
+  return res;
 };
 
 
